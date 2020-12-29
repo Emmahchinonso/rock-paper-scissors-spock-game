@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+		<title>Frontend Mentor | Rock, Paper, Scissors</title>
+	</head>
+	<body >
+		<header class="header">
+			<img
+				src="images/logo-bonus.svg"
+				alt="rock, paper, scissors, spoack and lizard"
+			/>
+			<p class="score-container">
+				<span class="label">score</span>
+				<span class="score">0</span>
+			</p>
+		</header>
+		<div class="section select-icon show-screen">
+			<div class="pentagon-bg">
+				<button data-icon="lizard" class="btn icon icon--lizard">
+					<span>
+						<img
+							class="icon__image"
+							src="images/icon-lizard.svg"
+							alt="lizard-icon"
+						/>
+					</span>
+				</button>
+				<button data-icon="paper" class="btn icon icon--paper">
+					<span
+						><img
+							class="icon__image"
+							src="images/icon-paper.svg"
+							alt="paper-icon"
+					/></span>
+				</button>
+				<button data-icon="rock" class="btn icon icon--rock">
+					<span>
+						<img
+							class="icon__image"
+							src="images/icon-rock.svg"
+							alt="rock-icon"
+						/>
+					</span>
+				</button>
+				<button data-icon="scissors" class="btn icon icon--scissors">
+					<span>
+						<img
+							class="icon__image"
+							src="images/icon-scissors.svg"
+							alt="scissors-icon"
+						/>
+					</span>
+				</button>
+				<button data-icon="spock" class="btn icon icon--spock">
+					<span>
+						<img
+							class="icon__image"
+							src="images/icon-spock.svg"
+							alt="spock-icon"
+						/>
+					</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="section game-panel">
+			<div class="wrapper">
+				<div class="item js-player">
+					<p>You picked</p>
+					<span class="item-holder"></span>
+				</div>
+
+				<div class="item game-result js-game-result">
+
+        </div>
+
+				<div class="item js-house">
+					<p>the house picked</p>
+					<span class="item-holder "></span>
+				</div>
+			</div>
+		</div>
+		<div class="rules-container">
+			<section class="rules">
+				<div class="rules__heading">
+					<h2 class="rules__title">Rules</h2>
+					<button class="btn js-btn-rules"><img src="./images/icon-close.svg" /></button>
+				</div>
+				<img src="images/image-rules-bonus.svg" alt="rules-bonus" />
+			</section>
+		</div>
+		<div class="btn-container">
+			<button class="btn btn--rules js-btn-rules">Rules</button>
+		</div>
+
+		<div class="attribution">
+			Design by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>.
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
